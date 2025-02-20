@@ -114,6 +114,6 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 
 ## 📧 Contact
 
-For any inquiries, contact [ Bushra Shahbaz](mailto\:bsdsf21m020@pucit.edu.pk) or visit the [GitHub Repository](https://github.com/Bushra-Butt-17/image-processing-algorithms).
+For any inquiries, contact [ Bushra Shahbaz](mailto\:bsdsf21m020@pucit.edu.pk) or visit the GitHub Repository.
 
 
