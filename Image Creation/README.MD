@@ -28,7 +28,7 @@ pip install numpy opencv-python matplotlib
 ### 📂 Clone the Repository
 
 ```sh
-git clone https://github.com/yourusername/image-processing-python.git
+git clone https://github.com/Bushra-Butt-17/image-processing-python.git
 cd image-processing-python
 ```
 
