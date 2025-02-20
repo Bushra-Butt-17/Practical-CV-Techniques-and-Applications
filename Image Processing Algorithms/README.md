@@ -29,6 +29,7 @@ Nearest neighbor interpolation is a simple and fast image resizing technique. It
 
 🖼️ **Example Output:**
 *(Image illustrating nearest neighbor resizing output)*
+![resized_nn](https://github.com/user-attachments/assets/2af07bfc-faa9-42f4-825e-dceefa0398b9)
 
 ---
 
@@ -44,6 +45,7 @@ Bilinear interpolation uses the closest **four pixels** to estimate new pixel va
 
 🖼️ **Example Output:**
 *(Image illustrating bilinear interpolation output)*
+![resized_bilinear](https://github.com/user-attachments/assets/f1b67d18-71bd-49be-af52-db428af2407c)
 
 ---
 
@@ -59,6 +61,7 @@ Gaussian filtering applies a **Gaussian kernel** to blur the image, reducing noi
 
 🖼️ **Example Output:**
 *(Image illustrating Gaussian filtering output)*
+![filtered_image](https://github.com/user-attachments/assets/6b42c8d2-6506-4270-83a4-6c51b94c5f63)
 
 ---
 
@@ -74,6 +77,7 @@ Convolution is used for edge detection by applying a **Laplacian kernel** (or ot
 
 🖼️ **Example Output:**
 *(Image illustrating edge detection output)*
+![convolved_image](https://github.com/user-attachments/assets/b0f5f1a4-fcc5-4771-a117-c3ef00cb1895)
 
 ---
 
