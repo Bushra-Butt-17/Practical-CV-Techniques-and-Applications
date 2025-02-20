@@ -1,42 +1,48 @@
-📌 Image Processing with Python
+# 📌 Image Processing with Python
 
-Welcome to Image Processing with Python! 🎨 This repository contains various image manipulation techniques implemented in Python using NumPy, OpenCV, and Matplotlib.
+Welcome to **Image Processing with Python**! 🎨 This repository contains **various image manipulation techniques** implemented in Python using **NumPy, OpenCV, and Matplotlib**.
 
-📜 Overview
+## 📜 Overview
 
 This repository focuses on fundamental image generation and transformation techniques:
 
-✅ Creating images with geometric shapes
+- ✅ Creating images with geometric shapes
+- ✅ Drawing grids and patterns
+- ✅ Mirroring images
+- ✅ Understanding image manipulation with OpenCV & NumPy
 
-✅ Drawing grids and patterns
+Each method provides an interactive approach to **customizing images** using user-defined parameters like **image size, line thickness, and box size**.
 
-✅ Mirroring images
+---
 
-✅ Understanding image manipulation with OpenCV & NumPy
+## 🚀 Getting Started
 
-Each method provides an interactive approach to customizing images using user-defined parameters like image size, line thickness, and box size.
-
-🚀 Getting Started
-
-🔧 Prerequisites
+### 🔧 Prerequisites
 
 Ensure you have Python installed along with the following libraries:
 
+```sh
 pip install numpy opencv-python matplotlib
+```
 
-📂 Clone the Repository
+### 📂 Clone the Repository
 
+```sh
 git clone https://github.com/yourusername/image-processing-python.git
 cd image-processing-python
+```
 
-🖼️ Image 1: Black Square with White Inner Square
+---
 
-📝 Description
+## 🖼️ Image 1: Black Square with White Inner Square
 
-This function creates an image with a black background and a white inner square placed at the center.
+### 📝 Description
 
-🖥️ Code Example
+This function **creates an image with a black background and a white inner square** placed at the center.
 
+### 🖥️ Code Example
+
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -48,17 +54,21 @@ def create_image_with_square(image_size, box_size):
     plt.imshow(image)
     plt.axis('off')
     plt.show()
+```
 
-📌 Output
+### 📌 Output
 
-🖼️ Image 2: Four Small Black Squares in Corners
+---
 
-📝 Description
+## 🖼️ Image 2: Four Small Black Squares in Corners
 
-This function generates an image with four black squares at each corner of a white canvas.
+### 📝 Description
 
-🖥️ Code Example
+This function generates an image with **four black squares at each corner** of a white canvas.
 
+### 🖥️ Code Example
+
+```python
 def create_image_with_four_boxes(image_size, box_size):
     image = np.ones((image_size, image_size, 3), dtype=np.uint8) * 255
     image[:box_size, :box_size] = [0, 0, 0]
@@ -68,17 +78,21 @@ def create_image_with_four_boxes(image_size, box_size):
     plt.imshow(image)
     plt.axis('off')
     plt.show()
+```
 
-📌 Output
+### 📌 Output
 
-🖼️ Image 3: Grid of Lines
+---
 
-📝 Description
+## 🖼️ Image 3: Grid of Lines
 
-This function creates an image with a grid of horizontal and vertical black lines.
+### 📝 Description
 
-🖥️ Code Example
+This function **creates an image with a grid of horizontal and vertical black lines**.
 
+### 🖥️ Code Example
+
+```python
 def create_grid(image_size, num_lines, line_thickness):
     image = np.ones((image_size, image_size, 3), dtype=np.uint8) * 255
     for i in range(num_lines):
@@ -90,17 +104,21 @@ def create_grid(image_size, num_lines, line_thickness):
     plt.imshow(image)
     plt.axis('off')
     plt.show()
+```
 
-📌 Output
+### 📌 Output
 
-🖼️ Image 4: Colored Boxes in Corners
+---
 
-📝 Description
+## 🖼️ Image 4: Colored Boxes in Corners
 
-This function generates a white canvas with four colored boxes placed at each corner: black, blue, green, and red.
+### 📝 Description
 
-🖥️ Code Example
+This function generates a white canvas with **four colored boxes** placed at each corner: black, blue, green, and red.
 
+### 🖥️ Code Example
+
+```python
 def create_colored_corners(image_size):
     image = np.ones((image_size, image_size, 3), dtype=np.uint8) * 255
     box_size = image_size // 10
@@ -110,17 +128,21 @@ def create_colored_corners(image_size):
     image[-box_size:, -box_size:] = [0, 0, 255]
     plt.imshow(image)
     plt.show()
+```
 
-📌 Output
+### 📌 Output
 
-🖼️ Image 5: Mirroring the Lower Half of an Image
+---
 
-📝 Description
+## 🖼️ Image 5: Mirroring the Lower Half of an Image
 
-This function reads an image, converts it to grayscale, and mirrors its lower half to replace the upper half.
+### 📝 Description
 
-🖥️ Code Example
+This function reads an image, converts it to **grayscale**, and mirrors its **lower half** to replace the **upper half**.
 
+### 🖥️ Code Example
+
+```python
 import cv2
 
 def mirror_image(image_path, output_path):
@@ -132,38 +154,46 @@ def mirror_image(image_path, output_path):
     mirrored_image = gray_image.copy()
     mirrored_image[:height//2, :] = mirrored_half
     cv2.imwrite(output_path, mirrored_image)
+```
 
-📌 Output
+### 📌 Output
 
-📚 Learning Outcomes
+---
+
+## 📚 Learning Outcomes
 
 By working with this repository, you will:
 
-✅ Understand image manipulation with NumPy and OpenCV✅ Learn to process pixel values for transformations✅ Visualize images using Matplotlib✅ Gain hands-on experience in basic computer vision techniques
+✅ Understand image manipulation with **NumPy and OpenCV**\
+✅ Learn to **process pixel values** for transformations\
+✅ Visualize images using **Matplotlib**\
+✅ Gain **hands-on experience** in **basic computer vision techniques**
 
-🏆 Contributing
+---
+
+## 🏆 Contributing
 
 Have an idea to enhance this repository? Feel free to contribute! Follow these steps:
 
-Fork this repository 🍴
+1. **Fork** this repository 🍴
+2. **Clone** the repository to your local machine 🖥️
+3. Create a **new branch** and make modifications ✏️
+4. **Push** the changes and submit a **Pull Request** 🔄
 
-Clone the repository to your local machine 🖥️
+---
 
-Create a new branch and make modifications ✏️
+## 🔗 Resources
 
-Push the changes and submit a Pull Request 🔄
+- [NumPy Documentation](https://numpy.org/doc/)
+- [OpenCV Documentation](https://docs.opencv.org/)
+- [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
 
-🔗 Resources
+---
 
-NumPy Documentation
+## 📩 Contact
 
-OpenCV Documentation
+For any queries, feel free to reach out at **bsdsf21m020\@pucit.edu.pk 📧**
 
-Matplotlib Documentation
+🎯 **Happy Coding!** 🚀
 
-📩 Contact
-
-For any queries, feel free to reach out at bsdsf21m020@pucit.edu.pk 📧
-
-🎯 Happy Coding! 🚀
 
